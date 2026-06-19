@@ -2,7 +2,7 @@
 
 ## Project Objective
 
-Designed and administered a Proxmox-based enterprise lab environment to develop practical skills in Windows Server administration, Active Directory, network segmentation, security monitoring, and infrastructure troubleshooting.
+Build and administer a hybrid enterprise infrastructure environment that combines on-premises and cloud technologies to simulate real-world IT operations. The project demonstrates hands-on experience with virtualization, Active Directory, Microsoft Entra ID, endpoint management, networking, security monitoring, and troubleshooting across interconnected systems.
 
 ## Technologies Used
 
@@ -12,6 +12,13 @@ Designed and administered a Proxmox-based enterprise lab environment to develop 
 - Active Directory
 - Windows 11
 - pfSense
+
+### Hybrid Identity & Endpoint Management
+- Microsoft Entra ID
+- Microsoft Entra Cloud Sync / Entra Connect
+- Microsoft Intune
+- Hybrid Azure AD Join
+- dsregcmd
 
 ### Networking
 - VLANs
@@ -69,6 +76,18 @@ Deployed Windows Server 2025 as an Active Directory Domain Services environment 
   Below: Configured and enforced domain-wide password policies through Group Policy Management, including password complexity requirements, 12-character minimum passwords, password history enforcement, and password expiration settings to strengthen identity security and align with enterprise security best practices.
 
 <img width="730" height="508" alt="Screenshot 2026-06-09 at 7 11 50 PM" src="https://github.com/user-attachments/assets/09ac6ed6-f709-4e7a-9486-77e25d7bbd7a" />
+
+## Hybrid Identity & Endpoint Management
+
+Extended the on-premises Active Directory lab by integrating Microsoft Entra ID to simulate a hybrid enterprise identity environment. This portion of the project focused on connecting traditional Windows Server Active Directory services with cloud-based identity and endpoint management workflows.
+
+- Configured Microsoft Entra ID tenant settings to support hybrid identity integration.
+- Installed and configured Microsoft Entra Cloud Sync / Entra Connect components to synchronize on-premises Active Directory users to Microsoft Entra ID.
+- Validated directory synchronization between the local `middleearth.local` domain and Microsoft Entra ID.
+- Prepared domain-joined Windows client systems for Hybrid Azure AD Join testing.
+- Used `dsregcmd /status` to validate device join state, domain join status, Azure AD join status, and troubleshooting results.
+- Troubleshot hybrid join issues related to AD configuration, synchronization scope, device registration, and authentication.
+- Explored Microsoft Intune endpoint management concepts including device enrollment, compliance visibility, ownership assignment, and BitLocker recovery workflows.
 
 ----
 
@@ -139,5 +158,8 @@ Implemented five VLANs to separate management, client, server, monitoring, and s
 - Improved familiarity with SIEM monitoring, endpoint telemetry, threat detection workflows, and log analysis through Security Onion and Elastic Stack integrations.
 
 - Enhanced documentation and change management practices by maintaining network diagrams, firewall rule documentation, system configurations, and deployment procedures throughout the lab environment.
-
+- Gained hands-on experience integrating on-premises Active Directory with Microsoft Entra ID to simulate a hybrid enterprise identity environment.
+- Strengthened understanding of identity synchronization, device registration, Hybrid Azure AD Join, and cloud-based endpoint management workflows.
+- Developed troubleshooting experience using `dsregcmd /status` to validate domain join state, Azure AD join state, SSO status, and hybrid join errors.
+- Improved understanding of how Microsoft Intune supports endpoint administration, device compliance, BitLocker recovery, and user-device ownership management.
 
