@@ -89,6 +89,16 @@ Extended the on-premises Active Directory lab by integrating Microsoft Entra ID 
 - Troubleshot hybrid join issues related to AD configuration, synchronization scope, device registration, and authentication.
 - Explored Microsoft Intune endpoint management concepts including device enrollment, compliance visibility, ownership assignment, and BitLocker recovery workflows.
 
+ Below: Microsoft Entra ID user synchronization showing Active Directory user accounts synchronized from the on-premises `middleearth.local` domain into Microsoft Entra ID using Microsoft Entra Cloud Sync.
+<img width="1448" height="895" alt="Screenshot 2026-06-19 at 8 32 35 PM" src="https://github.com/user-attachments/assets/53f0965b-b812-4b34-bba9-920ee5ca7da6" />
+Below: Microsoft Entra ID device inventory showing Windows systems successfully configured as Hybrid Microsoft Entra Joined devices, demonstrating integration between the on-premises Active Directory environment and Microsoft Entra ID.
+  <img width="762" height="440" alt="Screenshot 2026-06-19 at 8 34 28 PM" src="https://github.com/user-attachments/assets/ab53f875-4340-4703-a981-38c27a968a96" />
+  
+  Below: Device registration validation using `dsregcmd /status`, confirming successful Hybrid Microsoft Entra Join with both Active Directory domain membership (`DomainJoined : YES`) and Microsoft Entra ID registration (`AzureAdJoined : YES`).
+  <img width="754" height="194" alt="Screenshot 2026-06-19 at 8 42 37 PM" src="https://github.com/user-attachments/assets/bf4e0482-a7c2-4575-b941-21fb4b31b510" />
+
+
+
 ----
 
 ### Network Segmentation
