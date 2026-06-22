@@ -1,4 +1,4 @@
-# Enterprise Infrastructure & Security Home Lab
+# Enterprise Infrastructure, Identity & Security Home Lab
 
 ## Project Objective
 
